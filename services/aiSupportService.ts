@@ -4,6 +4,7 @@ import { Chart } from "../types";
 
 // Initialize Gemini with the platform-provided API key
 const genAI = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
+const model = "gemini-2.0-flash";
 export interface AIDiagnosis {
     diagnosis: string;
     isCodeBug: boolean;
