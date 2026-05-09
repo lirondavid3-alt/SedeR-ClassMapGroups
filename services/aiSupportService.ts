@@ -3,8 +3,7 @@ import { GoogleGenAI, GenerateContentResponse } from "@google/genai";
 import { Chart } from "../types";
 
 // Initialize Gemini with the platform-provided API key
-const genAI = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
-const model = "gemini-3-flash-preview";
+const genAI = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });const model = "gemini-3-flash-preview";
 
 export interface AIDiagnosis {
     diagnosis: string;
